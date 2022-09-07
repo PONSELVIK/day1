@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>day1</title>
+</head>
+<body>
+    <div>
+        <p>1.Difference between “ == “ and “ === “ operators</p> 
+        <pre>
+            both are comparison operators.
+            == compares only
+            ===compares the value and the datatype.
+                
+            eg: let a=2;
+                let b="2";
+            console.log(a==b);//true
+            console.log(a===b);//false
+            a=2 is a number. b="2" is a string.
+            so a==b checks the value only return true.
+            a=== checks the value and the datatype then it returns false.
+        </pre>
+        <p>2.What is the spread operator?</p>
+        <pre>
+            It is new additional operator in ES6.
+            basically it used to return shadow copy of the js object.
+            (...) is used for spread operator.
+            it takes in an iterable (array) and expand it into individual elements.
+            let a=[1,2,3,4];
+            let b=[...a];
+            console.log(b);//[1,2,3,4]
+
+            let c=["h","e","y"];
+            let d=[...c];
+            console.log(d);
+        </pre>
+        <p>3.What are the differences between var, let and const?</p>
+        <pre>
+            var: Functional scope (or) global scope
+            var only supports hoisted.
+            it can be reinitalized and redeclared.
+            and cand be modified later.
+
+            let: Block scope
+            let not supports hoisted.it returns undefined
+            it cannot be reassign or redeclared.
+            it cannot be modified later.
+            
+            const: Block scope.
+            const not supports hoised.it returns undefined.
+            it cannot be reassign or redeclared.
+            it cannot be modified later.
+        </pre>
+        <p>4.What is execution context</p>
+        <pre>
+            Browser's javascript engine create a special environment to handle the transformation and 
+        its exection of the code. this environment known as Execution function. 
+        exection context contains that currently code running and everything that aid in its execution.
+        <!-- During the Execution context running specific  code will be parsed by the parser, and converted into 
+        machine-level code,and create a memory for its execution.
+        two type of context. -->
+        two type of execution context in js:
+        <ol type="1">
+            global execution context
+            functional exection context
+        </ol>
+        In global exection context variable are stored in the memory.two phases will be executed.
+        <ol type="1">
+            creation phase
+            execution phase.
+        </ol>
+        In the creation phase variables are name as undefined.after the creation phase global execution
+        moved to execution phase.
+        During the execution phase js engine executes line by line, assign the values to the variable.
+        similar to function execution context.
+        </pre>
+        <p>5.What is meant by first class functions</p>
+        <div>
+            First class function are  the function that passed as an arguments into another function or 
+            can be  return from another funtion called first class citizes.
+        </div>
+    
+
+    </div>
+        <script src="index.js"></script>
+</body>
+</html>
